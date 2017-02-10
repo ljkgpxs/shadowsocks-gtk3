@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Shadowsocks-GTK3
+GenericName=Shadowsocks-GTK3
+Comment=Shadowsocks GUI client
+Exec=/usr/bin/ss-gtk3
+Icon=shadowsocks-gtk3
+Terminal=false
+Type=Application
+Categories=Network;
+StartupNotify=true
