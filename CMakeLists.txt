@@ -13,7 +13,7 @@ add_executable(ss-gtk3 main.c)
 
 target_link_libraries(ss-gtk3 ${GTK3_LIBRARIES} ${SS_LIBRARIES} -pthread)
 
-install(FILES ${CMAKE_BINARY_DIR}/ss-gtk3 DESTINATION /usr/bin/ PERMISSIONS GROUP_READ GROUP_WRITE OWNER_READ OWNER_WRITE WORLD_EXECUTE)
+install(FILES ${CMAKE_BINARY_DIR}/ss-gtk3 DESTINATION /usr/bin/ PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
 install(FILES ss-gtk3.glade DESTINATION /usr/share/shadowsocks-gtk3/)
 install(FILES shadowsocks-gtk3.desktop DESTINATION /usr/share/applications/)
 install(FILES shadowsocks-gtk3.png DESTINATION /usr/share/icons/hicolor/512x512/apps/)
