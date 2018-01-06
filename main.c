@@ -18,7 +18,7 @@ static pthread_t id = 0;
 
 int getMethodIdx(char *method)
 {
-	for(int i; i < 14; i++) {
+	for(int i = 0; i < 14; i++) {
 		if(strcmp(method, methodList[i]) == 0) {
 			//printf("Method %s\n", method);
 			return i;
