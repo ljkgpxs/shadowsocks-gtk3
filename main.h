@@ -15,7 +15,6 @@ struct configFile {
 	char acl[1024];
 	char log[1024];
 	int mode;
-	int auth;
 	int verbose;
 	int mtu;
 	int mptcp;

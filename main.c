@@ -43,7 +43,6 @@ void config2profile(struct configFile *conf, profile_t *prof)
 		strcpy(prof->acl, conf->acl);
 	} else
 		prof->acl = NULL;
-	prof->auth = conf->auth;
 	prof->fast_open = conf->fastOpen;
 
 	prof->local_addr = (char *)malloc(strlen(conf->localAddr) + 1);
@@ -84,7 +83,6 @@ void profile2config(profile_t *prof, struct configFile *conf)
 	if(prof->acl != NULL)
 		strcpy(conf->acl, prof->acl);
 	//printf("Done 1");
-	conf->auth = prof->auth;
 	conf->fastOpen = prof->fast_open;
 	strcpy(conf->localAddr, prof->local_addr);
 	conf->localPort = prof->local_port;
